@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>General Meeting</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="/favicon.png">
+    </head>
+    <body>
+        <nav>
+            <span>
+                <a href="https://maze.co/blog/ui-vs-ux/">
+                    Blog about UI/UX
+                </a>
+            </span>
+            &nbsp;
+            <span>
+                <a href="https://vertabelo.com/blog/database-model-for-a-messaging-system/">
+                    Blog about Databases for Messaging Apps
+                </a>
+            </span>
+        </nav>
+        <header>
+            <h1>General Meeting</h1>
+            <h2>Project Brainstorming</h2>
+            <h3>October 1, 2021</h3>
+        </header>
+        <hr>
+        <div>
+            <h3>Attendance:</h3>
+            <ul>
+                <li>George</li>
+                <li>Hank</li>
+                <li>Rochelle</li>
+            </ul>
+        </div>
+        <main>
+            <section>
+                <h3>Unfinished Items from Previous Meeting</h3>
+                <ol>
+                    <li>Finish discussing potential project ideas</li>
+                </ol>
+            </section>
+            <section>
+                <h3>Agenda</h3>
+                <ol>
+                    <li>Decide as a group which project to work on</li>
+                    <li>Set short term goals</li>
+                    <li>Time permitting: divide up starting work between group members</li>
+                </ol>
+            </section>
+            <hr>
+            <section>
+                <h3>Meeting Notes</h3>
+                <p>
+                    Last meeting, we came up with two project ideas: make a <i>calculator</i> or a <i>clock</i>.
+                    The general consensus was that both of these ideas were too basic. 
+                    This meeting, we were able to come up with much more interesting ideas, 
+                        such as making a basic <b>messaging app</b> or creating a simple <b>mobile game</b>.
+                </p>
+                <p>
+                    We decided on going forward with the <strong>messaging app</strong> idea. 
+                    While we were discussing what short term goals we wanted for the beginning of the project,
+                        Hank made a good point that we should try to <em>limit our scope</em> as much as possible,
+                        so that we would not cut out more work than we could handle. 
+                </p>
+                <p>
+                    As a team, we were able to come up with a few short term goals for the upcoming work week:
+                    <br>
+                    1. Set up a GitHub repository and add all members
+                    <br>
+                    2. Research the types of functionality that a messaging app should have at minimum
+                    <br>
+                    3. Use other messaging apps and see which features we would like to implement in our own design
+                </p>
+                <p>
+                    With enough time to spare towards the end of the meeting, we were able to divide up the work between our members.
+                    Rochelle will be mainly in charge of the backend code, Hank could work on the database design, and George would
+                    take control of the frontend.
+                </p>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <div>
+                <details>
+                    <summary><strong>Member Assignments</strong></summary>
+                    <img src="/work_assignments.png" alt="Chart showing how the work will be divided among current group members">
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary><strong>Meeting Audio</strong></summary>
+                    <audio controls src="/meeting_audio.m4a">Meeting Audio</audio>
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary><strong>Meeting Video</strong></summary>
+                    <video controls src="/meeting_video.mp4">Meeting Video</video>
+                </details>
+            </div>
+        </footer>
+        <hr>
+        <form id="Member Survey">
+            <h3>Member Survey</h3>
+            <p>What is your major?</p>
+            <input type="text">
+            <p>When is your birthday?</p>
+            <input type="date">
+            <p>How excited are you about the project?</p>
+            <fieldset>
+                <input type="radio" id="Not excited" name="excitement">
+                <label for="Not excited">Not excited</label>
+                <br>
+                <input type="radio" id="Kind of excited" name="excitement">
+                <label for="Kind of excited">Kind of excited</label>
+                <br>
+                <input type="radio" id="Very excited" name="excitement">
+                <label for="Very excited">Very excited</label>
+            </fieldset>
+            <p>What is your favorite ice cream flavor?</p>
+            <select>
+                <option value="">-Please choose an ice cream flavor-</option>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Other">Other</option>
+            </select>
+            <p>How experienced are you with software engineering?</p>
+            <input list="experience">
+            <datalist id="experience">
+                <option value="Not experienced">Not experienced</option>
+                <option value="Kind of experienced">Kind of experienced</option>
+                <option value="Very experienced">Very experienced</option>
+            </datalist>
+            <p>Please select your favorite animals:</p>
+            <input type="checkbox" id="Penguin">
+            <label for="Penguin">Penguin</label>
+            <br>
+            <input type="checkbox" id="Squid">
+            <label for="Squid">Squid</label>
+            <br>
+            <input type="checkbox" id="Other">
+            <label for="Other">Other</label>
+            <p>Please leave any extra comments below:</p>
+            <textarea rows="2" cols="100"></textarea>
+        </form>
+        <button form="Member Survey">Submit</button>
+    </body>
+</html>
